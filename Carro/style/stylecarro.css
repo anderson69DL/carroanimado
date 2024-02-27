@@ -1,0 +1,106 @@
+.contenedor{
+    display: flex;
+    background-image: url(/multimedia/fondo.jpg);
+    height: 630px;
+    position: relative;
+}
+
+.fondoMover{
+    animation: Desplazamiento 2s infinite linear; 
+}
+
+@keyframes Desplazamiento{
+    100%{
+        background-position-x: -900px;
+    }
+}
+
+
+
+.carroceria{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    bottom: 50px;
+    right: 500px;
+}
+
+.llanta1{
+    position: absolute;
+    width: 8%;
+    bottom: 20px;
+    right: 530px;
+}
+
+.llantaMover1{
+    animation: llantaRot1 2s infinite linear;
+}
+
+.llanta2{
+    position: absolute;
+    width: 8%;
+    bottom: 20px;
+    right: 750px;
+}
+
+.llantaMover2{
+    animation: llantaRot 2s infinite linear;
+}
+
+
+@keyframes llantaRot{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes llantaRot1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.luz{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 390px;
+    right: 350px;
+}
+
+.luzAnimacion{
+    animation: luz 2s infinite;
+}
+
+@keyframes luz{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.humo{
+    background-image: url(/multimedia/Humo\ \(1\).png);
+    position: absolute;
+    width: 170px;
+    height: 120px;
+    top: 30rem;
+    left: 16rem;
+    
+}
+
+.humoAnimado{
+    animation: humo 1s infinite steps(5);
+}
+
+@keyframes humo{
+    100%{
+        background-position-x: 1059px;
+    }
+
+}
+.oculto{
+    display: none;
+}
